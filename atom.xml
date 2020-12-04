@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mug9er&#39;s blog</title>
+  
+  <subtitle>Stay Hungry, Stay Foolish</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://orzff.cn/"/>
+  <updated>2020-12-04T14:48:35.409Z</updated>
+  <id>http://orzff.cn/</id>
+  
+  <author>
+    <name>Mug9er</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用hexo多个设备更新博客</title>
+    <link href="http://orzff.cn//1351aa80/"/>
+    <id>http://orzff.cn//1351aa80/</id>
+    <published>2020-12-04T14:30:57.000Z</published>
+    <updated>2020-12-04T14:48:35.409Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1glc75xmvwqj31cc0u0x53.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>杭电多校第一场</title>
+    <link href="http://orzff.cn//9d88cf0e/"/>
+    <id>http://orzff.cn//9d88cf0e/</id>
+    <published>2020-12-04T13:38:22.361Z</published>
+    <updated>2020-12-04T13:38:22.361Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gblvnxlwh0j31900u0e82.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="杭电多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E6%9D%AD%E7%94%B5%E5%A4%9A%E6%A0%A1/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合并排序链表+指针指向问题</title>
+    <link href="http://orzff.cn//f9d7dd15/"/>
+    <id>http://orzff.cn//f9d7dd15/</id>
+    <published>2020-12-04T13:38:22.360Z</published>
+    <updated>2020-12-04T13:38:22.361Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/0083TyOJly1gh8tcfep4pj30u01hcai7.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="剑指offer" scheme="http://orzff.cn/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="指针" scheme="http://orzff.cn/tags/%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode 配置Vue</title>
+    <link href="http://orzff.cn//9c6f56ad/"/>
+    <id>http://orzff.cn//9c6f56ad/</id>
+    <published>2020-11-29T03:20:30.000Z</published>
+    <updated>2020-12-04T13:38:22.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gl5vrpaevzj318g0p0tqv.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://orzff.cn/categories/Vue/"/>
+    
+    
+      <category term="html" scheme="http://orzff.cn/tags/html/"/>
+    
+      <category term="vscode 配置" scheme="http://orzff.cn/tags/vscode-%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记录一下利用tcp使得服务器与android客户端相连</title>
+    <link href="http://orzff.cn//b4b2d023/"/>
+    <id>http://orzff.cn//b4b2d023/</id>
+    <published>2020-10-21T14:11:20.000Z</published>
+    <updated>2020-12-04T14:32:09.416Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gjxbd3rshij31c00u0qv5.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="小项目" scheme="http://orzff.cn/categories/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="服务器" scheme="http://orzff.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="android" scheme="http://orzff.cn/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>远程服务器连接</title>
+    <link href="http://orzff.cn//c700630f/"/>
+    <id>http://orzff.cn//c700630f/</id>
+    <published>2020-05-25T08:54:31.000Z</published>
+    <updated>2020-12-04T13:38:22.364Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/0083TyOJly1gf4svbmd1kj30u013ie81.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="小项目" scheme="http://orzff.cn/categories/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="服务器" scheme="http://orzff.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬取88ys视频exe版</title>
+    <link href="http://orzff.cn//581490d4/"/>
+    <id>http://orzff.cn//581490d4/</id>
+    <published>2020-03-01T06:57:56.000Z</published>
+    <updated>2020-12-04T13:38:22.362Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gf4sw3im9mj317h0u0x0i.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
+    
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wallHaven.cc 模拟登录</title>
+    <link href="http://orzff.cn//72810b67/"/>
+    <id>http://orzff.cn//72810b67/</id>
+    <published>2020-02-11T07:26:29.000Z</published>
+    <updated>2020-12-04T13:38:22.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/0083TyOJly1gf4so3ls98j30u016ge82.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
+    
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python 爬取压缩过的数据</title>
+    <link href="http://orzff.cn//757817fb/"/>
+    <id>http://orzff.cn//757817fb/</id>
+    <published>2020-02-06T05:16:57.000Z</published>
+    <updated>2020-12-04T13:38:22.359Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gbmm3u79pwj31hc0u0qn6.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
+    
+      <category term="python 报错处理" scheme="http://orzff.cn/categories/spider/python-%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/"/>
+    
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python 爬取西刺免费代理</title>
+    <link href="http://orzff.cn//28d5d8e8/"/>
+    <id>http://orzff.cn//28d5d8e8/</id>
+    <published>2020-02-06T02:37:03.000Z</published>
+    <updated>2020-12-04T13:38:22.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/0083TyOJly1gbmhdj616xj31c00u0diq.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
+    
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杭电多校第七场</title>
+    <link href="http://orzff.cn//8f3d60e0/"/>
+    <id>http://orzff.cn//8f3d60e0/</id>
+    <published>2019-10-13T06:12:27.000Z</published>
+    <updated>2020-12-04T13:38:22.361Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblvmn9qtmj30u00wtapt.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="杭电多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E6%9D%AD%E7%94%B5%E5%A4%9A%E6%A0%A1/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CodeForces EduRound 74</title>
+    <link href="http://orzff.cn//b223976b/"/>
+    <id>http://orzff.cn//b223976b/</id>
+    <published>2019-10-10T12:12:20.000Z</published>
+    <updated>2020-12-04T13:38:22.359Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/0083TyOJly1gblvj9ccz7j31hc0u0wg4.jpg&quot; alt=&quot;wallhaven-wyvrj6.png&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="Codeforces" scheme="http://orzff.cn/categories/ACM/Codeforces/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>牛客多校第十场</title>
+    <link href="http://orzff.cn//b961061/"/>
+    <id>http://orzff.cn//b961061/</id>
+    <published>2019-09-12T09:20:18.000Z</published>
+    <updated>2020-12-04T13:38:22.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/0083TyOJly1gblwgb96b3j31hc0u0kc3.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2019ACM-ICPC南昌网络赛</title>
+    <link href="http://orzff.cn//4e0518cb/"/>
+    <id>http://orzff.cn//4e0518cb/</id>
+    <published>2019-09-10T06:13:02.000Z</published>
+    <updated>2020-12-04T13:38:22.359Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblvhn386gj31c00u0b29.jpg&quot; alt=&quot;1.png&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="ICPC" scheme="http://orzff.cn/categories/ACM/ICPC/"/>
+    
+      <category term="南昌网络赛" scheme="http://orzff.cn/categories/ACM/ICPC/%E5%8D%97%E6%98%8C%E7%BD%91%E7%BB%9C%E8%B5%9B/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>特征方程</title>
+    <link href="http://orzff.cn//ea13e7c5/"/>
+    <id>http://orzff.cn//ea13e7c5/</id>
+    <published>2019-09-10T05:08:23.000Z</published>
+    <updated>2020-12-04T13:38:22.364Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/0083TyOJly1gblww81f1jj31hc0u0kjl.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="算法学习笔记" scheme="http://orzff.cn/categories/ACM/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="特征方程" scheme="http://orzff.cn/tags/%E7%89%B9%E5%BE%81%E6%96%B9%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Min_25筛</title>
+    <link href="http://orzff.cn//ecec6bcc/"/>
+    <id>http://orzff.cn//ecec6bcc/</id>
+    <published>2019-09-02T12:39:13.000Z</published>
+    <updated>2020-12-04T13:38:22.359Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://imgchr.com/i/1s48RP&quot; alt=&quot;1s48RP.md.png](https://wx1.sinaimg.cn/mw690/0083TyOJly1gblvk9hifxj31hc0u0kjn.jpg)&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="算法学习笔记" scheme="http://orzff.cn/categories/ACM/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Min_25筛" scheme="http://orzff.cn/tags/Min-25%E7%AD%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>牛客多校第四场</title>
+    <link href="http://orzff.cn//db92c5b8/"/>
+    <id>http://orzff.cn//db92c5b8/</id>
+    <published>2019-08-26T08:52:42.000Z</published>
+    <updated>2020-12-04T13:38:22.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblwinlayaj31hc0u0npf.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>斜率优化dp</title>
+    <link href="http://orzff.cn//f1b7e3b7/"/>
+    <id>http://orzff.cn//f1b7e3b7/</id>
+    <published>2019-08-20T08:48:50.000Z</published>
+    <updated>2020-12-04T13:38:22.361Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gblx0dys6pj31hc0u04qw.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="算法学习笔记" scheme="http://orzff.cn/categories/ACM/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="dp优化" scheme="http://orzff.cn/tags/dp%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>全排列与逆序对</title>
+    <link href="http://orzff.cn//ea46ca8a/"/>
+    <id>http://orzff.cn//ea46ca8a/</id>
+    <published>2019-08-17T01:30:43.000Z</published>
+    <updated>2020-12-04T13:38:22.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblwv5d0xpj30u01407wm.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="算法学习笔记" scheme="http://orzff.cn/categories/ACM/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="逆序对" scheme="http://orzff.cn/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/"/>
+    
+      <category term="全排列" scheme="http://orzff.cn/tags/%E5%85%A8%E6%8E%92%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>牛客多校第九场</title>
+    <link href="http://orzff.cn//8ea435a5/"/>
+    <id>http://orzff.cn//8ea435a5/</id>
+    <published>2019-08-16T09:21:39.000Z</published>
+    <updated>2020-12-04T13:38:22.362Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblwbgmwi4j31hc0u0tfp.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+  </entry>
+  
+</feed>
