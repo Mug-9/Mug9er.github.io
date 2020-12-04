@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-04T15:25:39.718Z</updated>
+  <updated>2020-12-04T15:51:41.809Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>win10 terminal 配置</title>
+    <link href="http://orzff.cn//e96d644/"/>
+    <id>http://orzff.cn//e96d644/</id>
+    <published>2020-12-04T15:29:20.000Z</published>
+    <updated>2020-12-04T15:51:41.809Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1glc8u380kcj31r60u0hdt.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="配置" scheme="http://orzff.cn/categories/%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="terminal" scheme="http://orzff.cn/tags/terminal/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用hexo多个设备更新博客</title>
     <link href="http://orzff.cn//1351aa80/"/>
     <id>http://orzff.cn//1351aa80/</id>
     <published>2020-12-04T14:30:57.000Z</published>
-    <updated>2020-12-04T15:25:39.718Z</updated>
+    <updated>2020-12-04T15:30:30.888Z</updated>
     
     <summary type="html">
     
@@ -31,6 +53,10 @@
     
     </summary>
     
+      <category term="配置" scheme="http://orzff.cn/categories/%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Hexo" scheme="http://orzff.cn/tags/Hexo/"/>
     
   </entry>
   
@@ -451,32 +477,6 @@
       <category term="逆序对" scheme="http://orzff.cn/tags/%E9%80%86%E5%BA%8F%E5%AF%B9/"/>
     
       <category term="全排列" scheme="http://orzff.cn/tags/%E5%85%A8%E6%8E%92%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>牛客多校第九场</title>
-    <link href="http://orzff.cn//8ea435a5/"/>
-    <id>http://orzff.cn//8ea435a5/</id>
-    <published>2019-08-16T09:21:39.000Z</published>
-    <updated>2020-12-04T13:38:22.362Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblwbgmwi4j31hc0u0tfp.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
-    
-      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
-    
-    
-      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
