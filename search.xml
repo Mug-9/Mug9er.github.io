@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python 生成requirements.txt</title>
+    <url>//3d982a67/</url>
+    <content><![CDATA[<h2 id="生成requirements"><a href="#生成requirements" class="headerlink" title="生成requirements"></a>生成requirements</h2><p>在要生成requirements的目录的控制台输入</p>
+<p><code>pip freeze &gt; requirements.txt</code></p>
+<h2 id="安装requirement"><a href="#安装requirement" class="headerlink" title="安装requirement"></a>安装requirement</h2><p>要根据<code>requirements</code>安装时，在控制台输入</p>
+<p><code>pip install -r requirements.txt</code></p>]]></content>
+      <categories>
+        <category>spider</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>码云和github同步更新</title>
     <url>//2d45259f/</url>
     <content><![CDATA[<h2 id="码云"><a href="#码云" class="headerlink" title="码云"></a>码云</h2><p>由于众所周知的原因，在github上clone很慢，所以采用码云来加速clone</p>

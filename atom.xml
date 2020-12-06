@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-05T16:57:49.882Z</updated>
+  <updated>2020-12-06T02:56:39.412Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python 生成requirements.txt</title>
+    <link href="http://orzff.cn//3d982a67/"/>
+    <id>http://orzff.cn//3d982a67/</id>
+    <published>2020-12-06T02:49:16.000Z</published>
+    <updated>2020-12-06T02:56:39.412Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gldy5ckgjfj31410u0q8j.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
+    
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>码云和github同步更新</title>
@@ -449,30 +471,6 @@
     
     
       <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>斜率优化dp</title>
-    <link href="http://orzff.cn//f1b7e3b7/"/>
-    <id>http://orzff.cn//f1b7e3b7/</id>
-    <published>2019-08-20T08:48:50.000Z</published>
-    <updated>2020-12-04T13:38:22.361Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gblx0dys6pj31hc0u04qw.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="算法学习笔记" scheme="http://orzff.cn/categories/ACM/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="dp优化" scheme="http://orzff.cn/tags/dp%E4%BC%98%E5%8C%96/"/>
     
   </entry>
   
