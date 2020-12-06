@@ -255,26 +255,6 @@
   </entry>
   
   <entry>
-    <title>wallHaven.cc 模拟登录</title>
-    <link href="http://orzff.cn//72810b67/"/>
-    <id>http://orzff.cn//72810b67/</id>
-    <published>2020-02-11T07:26:29.000Z</published>
-    <updated>2020-12-04T13:38:22.360Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/0083TyOJly1gf4so3ls98j30u016ge82.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
-    
-    
-      <category term="python" scheme="http://orzff.cn/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python 爬取压缩过的数据</title>
     <link href="http://orzff.cn//757817fb/"/>
     <id>http://orzff.cn//757817fb/</id>
@@ -465,6 +445,32 @@
     
     
       <category term="Min_25筛" scheme="http://orzff.cn/tags/Min-25%E7%AD%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>牛客多校第四场</title>
+    <link href="http://orzff.cn//db92c5b8/"/>
+    <id>http://orzff.cn//db92c5b8/</id>
+    <published>2019-08-26T08:52:42.000Z</published>
+    <updated>2020-12-04T13:38:22.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblwinlayaj31hc0u0npf.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
+    
+      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
+    
+      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
+    
+    
+      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
