@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-06T02:57:11.330Z</updated>
+  <updated>2020-12-07T06:40:10.491Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>爬取wallpaper图片</title>
+    <link href="http://orzff.cn//2514ad2c/"/>
+    <id>http://orzff.cn//2514ad2c/</id>
+    <published>2020-12-07T06:21:42.000Z</published>
+    <updated>2020-12-07T06:40:10.491Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1glf9ttrqe4j30qx12w49p.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
+    
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
+    
+      <category term="小项目" scheme="http://orzff.cn/tags/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>python 生成requirements.txt</title>
@@ -279,11 +303,11 @@
   </entry>
   
   <entry>
-    <title>python 爬取西刺免费代理</title>
+    <title>python 爬取免费代理</title>
     <link href="http://orzff.cn//28d5d8e8/"/>
     <id>http://orzff.cn//28d5d8e8/</id>
     <published>2020-02-06T02:37:03.000Z</published>
-    <updated>2020-12-04T13:38:22.360Z</updated>
+    <updated>2020-12-07T06:19:50.417Z</updated>
     
     <summary type="html">
     
@@ -445,32 +469,6 @@
     
     
       <category term="Min_25筛" scheme="http://orzff.cn/tags/Min-25%E7%AD%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>牛客多校第四场</title>
-    <link href="http://orzff.cn//db92c5b8/"/>
-    <id>http://orzff.cn//db92c5b8/</id>
-    <published>2019-08-26T08:52:42.000Z</published>
-    <updated>2020-12-04T13:38:22.363Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblwinlayaj31hc0u0npf.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
-    
-      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
-    
-    
-      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
