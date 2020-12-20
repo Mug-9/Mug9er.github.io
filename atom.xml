@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-07T06:41:10.137Z</updated>
+  <updated>2020-12-20T10:30:27.041Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>服务器与本地传输文件</title>
+    <link href="http://orzff.cn//7ff886e9/"/>
+    <id>http://orzff.cn//7ff886e9/</id>
+    <published>2020-12-20T10:18:22.000Z</published>
+    <updated>2020-12-20T10:30:27.041Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;SCP&quot;&gt;&lt;a href=&quot;#SCP&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="服务器" scheme="http://orzff.cn/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="服务器" scheme="http://orzff.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>爬取wallpaper图片</title>
@@ -445,30 +471,6 @@
     
     
       <category term="特征方程" scheme="http://orzff.cn/tags/%E7%89%B9%E5%BE%81%E6%96%B9%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Min_25筛</title>
-    <link href="http://orzff.cn//ecec6bcc/"/>
-    <id>http://orzff.cn//ecec6bcc/</id>
-    <published>2019-09-02T12:39:13.000Z</published>
-    <updated>2020-12-07T06:43:43.044Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/0083TyOJly1gblvk9hifxj31hc0u0kjn.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="算法学习笔记" scheme="http://orzff.cn/categories/ACM/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="Min_25筛" scheme="http://orzff.cn/tags/Min-25%E7%AD%9B/"/>
     
   </entry>
   

@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>服务器与本地传输文件</title>
+    <url>//7ff886e9/</url>
+    <content><![CDATA[<h2 id="SCP"><a href="#SCP" class="headerlink" title="SCP"></a><code>SCP</code></h2><p>首先确保服务器与本地通过<code>ssh</code>能进行链接，确保有<code>scp</code></p>
+<h2 id="传输"><a href="#传输" class="headerlink" title="传输"></a>传输</h2><ul>
+<li>远程拷贝文件<ul>
+<li><code>scp</code> 本地文件 远程服务器用户名@远程服务器ip地址：指定拷贝到远程服务器路径</li>
+<li><code>scp</code> 远程服务器用户名@远程服务器ip地址：远程服务器文件 指定拷贝到本地电脑的路径</li>
+</ul>
+</li>
+<li>远程拷贝目录<ul>
+<li><code>scp</code> <code>-r</code>本地文件 远程服务器用户名<code>@</code>远程服务器<code>ip</code>地址：指定拷贝到远程服务器路径</li>
+<li><code>scp</code> <code>-r</code> 远程服务器用户名<code>@</code>远程服务器<code>ip</code>地址：远程服务器文件 指定拷贝到本地电脑的路径</li>
+<li><code>-r</code> 表示递归拷贝整个目录</li>
+</ul>
+</li>
+</ul>
+<h3 id="传输文件至服务器"><a href="#传输文件至服务器" class="headerlink" title="传输文件至服务器"></a>传输文件至服务器</h3><p><img src="https://wx1.sinaimg.cn/mw690/0083TyOJly1gluhz0agd7j315x08oatm.jpg" alt></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">scp <span class="number">1.</span>txt root@<span class="number">123.56</span><span class="number">.252</span><span class="number">.111</span>:<span class="regexp">/root</span></span><br></pre></td></tr></table></figure>
+<h3 id="从服务器拷贝目录"><a href="#从服务器拷贝目录" class="headerlink" title="从服务器拷贝目录"></a>从服务器拷贝目录</h3><p><img src="https://wx3.sinaimg.cn/mw690/0083TyOJly1gluhyy1bkbj31690a7qqm.jpg" alt></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">scp -r root@<span class="number">123.56</span><span class="number">.252</span><span class="number">.111</span>:<span class="regexp">/root/</span>select_test C:<span class="regexp">/Users/</span><span class="number">64371</span>/Desktop</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>服务器</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>爬取wallpaper图片</title>
     <url>//2514ad2c/</url>
     <content><![CDATA[<h2 id="1-user-agent-list"><a href="#1-user-agent-list" class="headerlink" title="1. user_agent_list"></a>1. user_agent_list</h2><p>这里是从网上获得的user_agent列表， 稍加修改就可以了</p>
