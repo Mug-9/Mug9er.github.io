@@ -1,6 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>服务器配置</title>
+    <url>//7dfc688d/</url>
+    <content><![CDATA[<h2 id="centos安装python3"><a href="#centos安装python3" class="headerlink" title="centos安装python3"></a><code>centos</code>安装<code>python3</code></h2><h2 id="参考-centos下安装python3详细教程"><a href="#参考-centos下安装python3详细教程" class="headerlink" title="参考 centos下安装python3详细教程"></a>参考 <a href="https://blog.csdn.net/t8116189520/article/details/81976755" target="_blank" rel="noopener">centos下安装python3详细教程</a></h2><h3 id="1-python位置"><a href="#1-python位置" class="headerlink" title="1.python位置"></a>1.python位置</h3><p>使用<figure class="highlight plain"><figcaption><span>python```得到`python`位置</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">```js</span><br><span class="line">[root@iz2ze3g6pyat2fqpma7zdvz django_test]# whereis python</span><br><span class="line">python: /usr/bin/python /usr/bin/python.config /usr/bin/python2.7 /usr/bin/python.bak /usr/bin/python2.7-config /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/include/python2.7 /usr/share/man/man1/python.1.gz</span><br></pre></td></tr></table></figure></p>
+<p>得到<code>python</code>的位置在 <code>/usr/bin</code>目录</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">[root@iz2ze3g6pyat2fqpma7zdvz ~]# cd /usr/bin</span><br><span class="line">[root@iz2ze3g6pyat2fqpma7zdvz bin]# ll python*</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root   <span class="number">32</span> Dec <span class="number">22</span> <span class="number">19</span>:<span class="number">40</span> python -&gt; <span class="regexp">/usr/</span>local/python3/bin/python3<span class="number">.9</span></span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root    <span class="number">9</span> Dec <span class="number">22</span> <span class="number">18</span>:<span class="number">30</span> python2 -&gt; python2<span class="number">.7</span></span><br><span class="line">-rwxr-xr-x <span class="number">1</span> root root <span class="number">7144</span> Nov <span class="number">17</span> <span class="number">06</span>:<span class="number">23</span> python2<span class="number">.7</span></span><br><span class="line">-rwxr-xr-x <span class="number">1</span> root root <span class="number">1835</span> Nov <span class="number">17</span> <span class="number">06</span>:<span class="number">23</span> python2<span class="number">.7</span>-config</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root   <span class="number">16</span> Dec <span class="number">22</span> <span class="number">18</span>:<span class="number">30</span> python2-config -&gt; python2<span class="number">.7</span>-config</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root   <span class="number">32</span> Dec <span class="number">23</span> <span class="number">18</span>:<span class="number">43</span> python3 -&gt; <span class="regexp">/usr/</span>local/python3/bin/python3<span class="number">.9</span></span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root    <span class="number">7</span> Dec <span class="number">22</span> <span class="number">18</span>:<span class="number">30</span> python.bak -&gt; python2</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root   <span class="number">39</span> Dec <span class="number">22</span> <span class="number">19</span>:<span class="number">36</span> python.config -&gt; <span class="regexp">/usr/</span>local/python3/bin/python3<span class="number">.9</span>-config</span><br><span class="line">lrwxrwxrwx <span class="number">1</span> root root   <span class="number">14</span> Dec <span class="number">22</span> <span class="number">18</span>:<span class="number">30</span> python-config.bak -&gt; python2-config</span><br><span class="line"></span><br><span class="line">python_django:</span><br><span class="line">total <span class="number">20</span></span><br><span class="line">drwxr-xr-x <span class="number">2</span> root root <span class="number">4096</span> Dec <span class="number">23</span> <span class="number">15</span>:<span class="number">33</span> bin</span><br><span class="line">drwxr-xr-x <span class="number">2</span> root root <span class="number">4096</span> Dec <span class="number">23</span> <span class="number">15</span>:<span class="number">33</span> include</span><br><span class="line">drwxr-xr-x <span class="number">3</span> root root <span class="number">4096</span> Dec <span class="number">23</span> <span class="number">15</span>:<span class="number">33</span> lib</span><br><span class="line">drwxr-xr-x <span class="number">3</span> root root <span class="number">4096</span> Dec <span class="number">23</span> <span class="number">15</span>:<span class="number">33</span> lib64</span><br><span class="line">-rw-r--r-- <span class="number">1</span> root root  <span class="number">201</span> Dec <span class="number">23</span> <span class="number">15</span>:<span class="number">33</span> pyvenv.cfg</span><br></pre></td></tr></table></figure>
+<p>进入<code>/usr/bin</code>目录使用<code>ll python*</code>我们可以得到<code>python</code>的各种版本</p>
+<p><code>-&gt;</code>是软连接，意味这个文件是后面文件的软链接，这个<code>python</code>也可以看成命令</p>
+<h3 id="2-python3的依赖"><a href="#2-python3的依赖" class="headerlink" title="2 python3的依赖"></a>2 <code>python3</code>的依赖</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make</span><br></pre></td></tr></table></figure>
+<h3 id="3-安装pip"><a href="#3-安装pip" class="headerlink" title="3 安装pip"></a>3 安装<code>pip</code></h3><p>centos7没有安装pip</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">#运行这个命令添加epel扩展源</span><br><span class="line">yum -y install epel-release</span><br><span class="line"> </span><br><span class="line">#安装pip</span><br><span class="line">yum install python-pip</span><br></pre></td></tr></table></figure>
+<h3 id="4-用pip安装wget"><a href="#4-用pip安装wget" class="headerlink" title="4 用pip安装wget"></a>4 用<code>pip</code>安装<code>wget</code></h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">pip install wget</span><br></pre></td></tr></table></figure>
+<h3 id="5-用wget下载python3"><a href="#5-用wget下载python3" class="headerlink" title="5 用wget下载python3"></a>5 用<code>wget</code>下载<code>python3</code></h3><p>在<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">官网</a>找到想要的版本链接</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">wget https:<span class="comment">//www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz</span></span><br></pre></td></tr></table></figure>
+<h3 id="6-编译python3源码包"><a href="#6-编译python3源码包" class="headerlink" title="6 编译python3源码包"></a>6 编译<code>python3</code>源码包</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">#解压</span><br><span class="line">xz -d Python<span class="number">-3.6</span><span class="number">.4</span>.tar.xz</span><br><span class="line">tar -xf Python<span class="number">-3.6</span><span class="number">.4</span>.tar</span><br><span class="line">#进入解压后的目录，依次执行下面命令进行手动编译</span><br><span class="line">cd Python<span class="number">-3.6</span><span class="number">.4</span></span><br><span class="line">./configure prefix=<span class="regexp">/usr/</span>local/python3</span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"># 如果出现can't decompress data; zlib not available这个错误，则需要安装相关库</span><br><span class="line">#安装依赖zlib、zlib-devel</span><br><span class="line">yum install zlib zlib</span><br><span class="line">yum install zlib zlib-devel</span><br></pre></td></tr></table></figure>
+<h3 id="7-添加软连接"><a href="#7-添加软连接" class="headerlink" title="7 添加软连接"></a>7 添加软连接</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">#将原来的链接备份</span><br><span class="line">mv /usr/bin/python /usr/bin/python.bak</span><br><span class="line"> </span><br><span class="line">#添加python3的软链接</span><br><span class="line">ln -s /usr/local/python3/bin/python3<span class="number">.6</span> /usr/bin/python</span><br><span class="line"> </span><br><span class="line">#测试是否安装成功了</span><br><span class="line">python -V</span><br></pre></td></tr></table></figure>
+<p>如果本身没有python3的软链接，可以再</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">ln -s /usr/local/python3/bin/python3<span class="number">.6</span> /usr/bin/python3</span><br></pre></td></tr></table></figure>
+<h3 id="8-更改yum配置"><a href="#8-更改yum配置" class="headerlink" title="8 更改yum配置"></a>8 更改<code>yum</code>配置</h3><p>因为<code>yum</code>使用<code>python2</code>，所以需要更改一个<code>yum</code>的配置</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">vi /usr/bin/yum</span><br><span class="line">把#! <span class="regexp">/usr/</span>bin/python修改为#! <span class="regexp">/usr/</span>bin/python2</span><br><span class="line"> </span><br><span class="line">vi /usr/libexec/urlgrabber-ext-down</span><br><span class="line">把#! <span class="regexp">/usr/</span>bin/python 修改为#! <span class="regexp">/usr/</span>bin/python2</span><br></pre></td></tr></table></figure>
+<h2 id="virtualenv和virtualenvwrapper"><a href="#virtualenv和virtualenvwrapper" class="headerlink" title="virtualenv和virtualenvwrapper"></a><code>virtualenv</code>和<code>virtualenvwrapper</code></h2><p><code>python</code>虚拟环境</p>
+<p>简单点说<code>python</code>的虚拟环境就是给每个项目一个独立的<code>python</code>配置，各个项目之间的配置不影响，</p>
+<h3 id="1-下载virtualenv"><a href="#1-下载virtualenv" class="headerlink" title="1 下载virtualenv"></a>1 下载<code>virtualenv</code></h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">pip install virtualenv</span><br></pre></td></tr></table></figure>
+<h3 id="2-创建新项目"><a href="#2-创建新项目" class="headerlink" title="2 创建新项目"></a>2 创建新项目</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">virtualenv env</span><br></pre></td></tr></table></figure>
+<h3 id="3-使用虚拟环境"><a href="#3-使用虚拟环境" class="headerlink" title="3 使用虚拟环境"></a>3 使用虚拟环境</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">source env/bin/activate</span><br></pre></td></tr></table></figure>
+<h3 id="4-退出虚拟环境"><a href="#4-退出虚拟环境" class="headerlink" title="4 退出虚拟环境"></a>4 退出虚拟环境</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure>
+<h3 id="5-virtualenvwrapper安装"><a href="#5-virtualenvwrapper安装" class="headerlink" title="5 virtualenvwrapper安装"></a>5 <code>virtualenvwrapper</code>安装</h3><p><code>virtualenvwrapper</code> 可以对虚拟环境进行集中管理</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">pip install virtualenvwrapper</span><br></pre></td></tr></table></figure>
+<h3 id="6-添加-bashrc"><a href="#6-添加-bashrc" class="headerlink" title="6 添加~/.bashrc"></a>6 添加<code>~/.bashrc</code></h3><p>在<code>~/.bashrc</code>添加</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> WORKON_HOME=~<span class="regexp">/Envs</span></span><br><span class="line"><span class="regexp">source /u</span>sr/local/bin/virtualenvwrapper.sh</span><br></pre></td></tr></table></figure>
+<p>读入配置文件</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">source ~<span class="regexp">/.bashrc　　　　#读入配置文件，立即生效</span></span><br></pre></td></tr></table></figure>
+<h3 id="7-virtualenvwrapper基本使用"><a href="#7-virtualenvwrapper基本使用" class="headerlink" title="7 virtualenvwrapper基本使用"></a>7 <code>virtualenvwrapper</code>基本使用</h3><ul>
+<li>创建虚拟环境 <code>mkvirtualenv</code></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">mkvirtualenv venv</span><br></pre></td></tr></table></figure>
+<p>　这样会在<code>WORKON_HOME</code>变量指定的目录下新建名为<code>venv</code>的虚拟环境。</p>
+<ul>
+<li><p>指定python版本</p>
+<p><code>--python</code>指定<code>python</code>解释器</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkvirtualenv --python=/usr/local/python3.5.3/bin/python venv</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看当前虚拟环境目录</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">workon</span><br></pre></td></tr></table></figure>
+<ul>
+<li>切换到虚拟环境</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">workon xxx</span><br></pre></td></tr></table></figure>
+<ul>
+<li>退出虚拟环境</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure>
+<ul>
+<li>删除虚拟环境</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">rmvirtualenv xxx</span><br></pre></td></tr></table></figure>
+<h3 id="8-出错处理"><a href="#8-出错处理" class="headerlink" title="8 出错处理"></a>8 出错处理</h3><p>出现 <code>ModuleNotFoundError: No module named &#39;_ctypes&#39;</code></p>
+<ul>
+<li>安装<code>libffi-devel</code></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">yum install libffi-devel -y</span><br></pre></td></tr></table></figure>
+<ul>
+<li>重装<code>python</code></li>
+<li>使用<code>make &amp;&amp; make install</code></li>
+</ul>
+<h2 id="django"><a href="#django" class="headerlink" title="django"></a><code>django</code></h2><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1 下载"></a>1 下载</h3><p>使用<code>pip install django</code></p>
+<h3 id="2-创建django项目"><a href="#2-创建django项目" class="headerlink" title="2 创建django项目"></a>2 创建django项目</h3><p><code>django-admin startproject xxx</code></p>
+<h3 id="3-启动django"><a href="#3-启动django" class="headerlink" title="3 启动django"></a>3 启动django</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">python manage.py runserver <span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">80</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-配置文件"><a href="#4-配置文件" class="headerlink" title="4 配置文件"></a>4 配置文件</h3><p>进入setting.py文件</p>
+<p>在allowHost中添加自己的ip</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">ALLOWED_HOSTS = [</span><br><span class="line">   <span class="string">'123.56.252.111'</span>,</span><br><span class="line">   <span class="string">'localhost'</span>,</span><br><span class="line">  <span class="string">'0.0.0.0:8000'</span>,                                                                   		<span class="string">'127.0.0.1'</span></span><br><span class="line">     ]</span><br></pre></td></tr></table></figure>
+<p>这样在运行后就可以用<code>http://123.56.252.111:8000/</code>来访问</p>
+<h3 id="5-报错处理"><a href="#5-报错处理" class="headerlink" title="5 报错处理"></a>5 报错处理</h3><p><a href="https://blog.csdn.net/weixin_44110998/article/details/103499213" target="_blank" rel="noopener">参考</a></p>
+<p>出现</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">django.core.exceptions.ImproperlyConfigured: SQLite <span class="number">3.8</span><span class="number">.3</span> or later is required (found <span class="number">3.7</span><span class="number">.17</span>).</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>在<a href="https://www.sqlite.org/download.html" target="_blank" rel="noopener">官网</a>找到想要版本的链接</p>
+</li>
+<li><p>使用<code>wget</code>下载</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">#链接最好重新获取，否则可能不是最新版本</span><br><span class="line">wget https:<span class="comment">//www.sqlite.org/2019/sqlite-autoconf-3300100.tar.gz</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>解压安装</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">[root@localhost home]# tar zxvf sqlite-autoconf-3300100.tar.gz</span><br><span class="line">[root@localhost home]# cd sqlite-autoconf-3300100/</span><br><span class="line">[root@localhost sqlite-autoconf-3300100]# ./configure</span><br><span class="line">[root@localhost sqlite-autoconf-3300100]# make &amp; make install</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看版本</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">#检查新安装的sqlite3版本</span><br><span class="line">[root@localhost home]# /usr/local/bin/sqlite3 --version</span><br><span class="line"><span class="number">3.30</span><span class="number">.1</span> <span class="number">2019</span><span class="number">-10</span><span class="number">-10</span> <span class="number">20</span>:<span class="number">19</span>:<span class="number">45</span> <span class="number">18</span>db032d058f1436ce3dea84081f4ee5a0f2259ad97301d43c426bc7f3df1b0b</span><br><span class="line"></span><br><span class="line">#检查旧的sqlite3版本</span><br><span class="line">[root@localhost home]# /usr/bin/sqlite3 --version</span><br><span class="line"><span class="number">3.7</span><span class="number">.17</span> <span class="number">2013</span><span class="number">-05</span><span class="number">-20</span> <span class="number">00</span>:<span class="number">56</span>:<span class="number">22</span> <span class="number">118</span>a3b35693b134d56ebd780123b7fd6f1497668</span><br><span class="line"></span><br><span class="line"># 把旧的sqlite3改个名字</span><br><span class="line">[root@localhost home]# mv /usr/bin/sqlite3  /usr/bin/sqlite3_old</span><br><span class="line"></span><br><span class="line"># 设置软链接</span><br><span class="line">[root@localhost home]# ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3</span><br><span class="line"></span><br><span class="line">#查看sqlite3版本</span><br><span class="line">[root@localhost home]# sqlite3 --version</span><br><span class="line"><span class="number">3.30</span><span class="number">.1</span> <span class="number">2019</span><span class="number">-10</span><span class="number">-10</span> <span class="number">20</span>:<span class="number">19</span>:<span class="number">45</span> <span class="number">18</span>db032d058f1436ce3dea84081f4ee5a0f2259ad97301d43c426bc7f3df1b0b</span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加到<code>bashrc</code>文件</li>
+</ul>
+<p>在<code>~/.bashrc</code>中添加</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">export</span> LD_LIBRARY_PATH=<span class="string">"/usr/local/lib"</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>检查<code>sqlite3</code>版本</li>
+</ul>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">[root@localhost home]# python3</span><br><span class="line">Python <span class="number">3.6</span><span class="number">.5</span> (<span class="keyword">default</span>, Jul  <span class="number">9</span> <span class="number">2019</span>, <span class="number">20</span>:<span class="number">03</span>:<span class="number">55</span>) </span><br><span class="line">[GCC <span class="number">4.8</span><span class="number">.5</span> <span class="number">20150623</span> (Red Hat <span class="number">4.8</span><span class="number">.5</span><span class="number">-36</span>)] on linux</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> or <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line">&gt;&gt;&gt; <span class="keyword">import</span> sqlite3</span><br><span class="line">&gt;&gt;&gt; sqlite3.sqlite_version</span><br><span class="line"><span class="string">'3.30.1'</span></span><br><span class="line">&gt;&gt;&gt; exit()  </span><br><span class="line">[root@localhost home]#</span><br></pre></td></tr></table></figure>
+<h2 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a><code>nginx</code></h2><p><a href="https://www.cnblogs.com/huiyi0521/p/10253341.html" target="_blank" rel="noopener">参考</a></p>
+<h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h3><p>添加Nginx 存储库</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">sudo yum -y install epel-release</span><br></pre></td></tr></table></figure>
+<p>安装<code>nginx</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">sudo yum -y install nginx</span><br></pre></td></tr></table></figure>
+<h3 id="2-启动"><a href="#2-启动" class="headerlink" title="2 启动"></a>2 启动</h3><p>启动nginx</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">sudo systemctl start nginx</span><br></pre></td></tr></table></figure>
+<h3 id="3-防火墙"><a href="#3-防火墙" class="headerlink" title="3 防火墙"></a>3 防火墙</h3><p>允许http通信</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --permanent --zone=public --add-service=http</span><br></pre></td></tr></table></figure>
+<p>允许https通信</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --permanent --zone=public --add-service=https</span><br></pre></td></tr></table></figure>
+<p>重启防火墙 </p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4 测试"></a>4 测试</h3><p>在浏览器输入地址</p>
+<h3 id="5-卸载"><a href="#5-卸载" class="headerlink" title="5 卸载"></a>5 卸载</h3><p>停止nginx</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">service nginx stop</span><br><span class="line"><span class="comment">// centos 7</span></span><br><span class="line">sysyemcyl stop nginx</span><br></pre></td></tr></table></figure>
+<p>删除自启动</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">chkconfig nginx off</span><br></pre></td></tr></table></figure>
+<p>从源头删除nginx</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">rm -rf /usr/sbin/nginx</span><br><span class="line">rm -rf /etc/nginx</span><br><span class="line">rm -rf /etc/init.d/nginx</span><br></pre></td></tr></table></figure>
+<p>使用yum清理</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">yum remove nginx</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>配置</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>服务器与本地传输文件</title>
     <url>//7ff886e9/</url>
     <content><![CDATA[<h2 id="SCP"><a href="#SCP" class="headerlink" title="SCP"></a><code>SCP</code></h2><p>首先确保服务器与本地通过<code>ssh</code>能进行链接，确保有<code>scp</code></p>
