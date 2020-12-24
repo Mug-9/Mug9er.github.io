@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-23T12:19:58.051Z</updated>
+  <updated>2020-12-24T08:05:19.169Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django+Vue+Nginx+uWSGI部署</title>
+    <link href="http://orzff.cn//1ae14b31/"/>
+    <id>http://orzff.cn//1ae14b31/</id>
+    <published>2020-12-24T08:02:06.000Z</published>
+    <updated>2020-12-24T08:05:19.169Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1glz0791xozj30u016shdt.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="配置" scheme="http://orzff.cn/categories/%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="服务器" scheme="http://orzff.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>服务器配置</title>
@@ -135,7 +157,7 @@
     <link href="http://orzff.cn//e96d644/"/>
     <id>http://orzff.cn//e96d644/</id>
     <published>2020-12-04T15:29:20.000Z</published>
-    <updated>2020-12-24T03:15:54.647Z</updated>
+    <updated>2020-12-24T08:03:43.343Z</updated>
     
     <summary type="html">
     
@@ -438,32 +460,6 @@
       <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
-    
-    
-      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019ACM-ICPC南昌网络赛</title>
-    <link href="http://orzff.cn//4e0518cb/"/>
-    <id>http://orzff.cn//4e0518cb/</id>
-    <published>2019-09-10T06:13:02.000Z</published>
-    <updated>2020-12-04T13:38:22.359Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1gblvhn386gj31c00u0b29.jpg&quot; alt=&quot;1.png&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="ICPC" scheme="http://orzff.cn/categories/ACM/ICPC/"/>
-    
-      <category term="南昌网络赛" scheme="http://orzff.cn/categories/ACM/ICPC/%E5%8D%97%E6%98%8C%E7%BD%91%E7%BB%9C%E8%B5%9B/"/>
     
     
       <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
