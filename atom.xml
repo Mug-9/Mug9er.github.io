@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-24T08:05:19.169Z</updated>
+  <updated>2020-12-24T12:29:00.430Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Django + Vue 快速构建项目</title>
+    <link href="http://orzff.cn//b2788495/"/>
+    <id>http://orzff.cn//b2788495/</id>
+    <published>2020-12-24T12:14:26.000Z</published>
+    <updated>2020-12-24T12:29:00.430Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1glz7wduo4kj30u011itlf.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="配置" scheme="http://orzff.cn/categories/%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="小项目" scheme="http://orzff.cn/tags/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Django+Vue+Nginx+uWSGI部署</title>
     <link href="http://orzff.cn//1ae14b31/"/>
     <id>http://orzff.cn//1ae14b31/</id>
     <published>2020-12-24T08:02:06.000Z</published>
-    <updated>2020-12-24T08:05:19.169Z</updated>
+    <updated>2020-12-24T08:05:41.784Z</updated>
     
     <summary type="html">
     
@@ -43,7 +65,7 @@
     <link href="http://orzff.cn//7dfc688d/"/>
     <id>http://orzff.cn//7dfc688d/</id>
     <published>2020-12-23T12:13:41.000Z</published>
-    <updated>2020-12-23T12:19:58.051Z</updated>
+    <updated>2020-12-24T12:15:35.888Z</updated>
     
     <summary type="html">
     
@@ -102,9 +124,9 @@
       <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
     
     
-      <category term="python" scheme="http://orzff.cn/tags/python/"/>
-    
       <category term="小项目" scheme="http://orzff.cn/tags/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="python" scheme="http://orzff.cn/tags/python/"/>
     
   </entry>
   
@@ -434,32 +456,6 @@
       <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
     
       <category term="Codeforces" scheme="http://orzff.cn/categories/ACM/Codeforces/"/>
-    
-    
-      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>牛客多校第十场</title>
-    <link href="http://orzff.cn//b961061/"/>
-    <id>http://orzff.cn//b961061/</id>
-    <published>2019-09-12T09:20:18.000Z</published>
-    <updated>2020-12-04T13:38:22.363Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/0083TyOJly1gblwgb96b3j31hc0u0kc3.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
-    
-      <category term="牛客多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E7%89%9B%E5%AE%A2%E5%A4%9A%E6%A0%A1/"/>
     
     
       <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>

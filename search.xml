@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Django + Vue 快速构建项目</title>
+    <url>//b2788495/</url>
+    <content><![CDATA[<h2 id="使用Vue-Django搭建项目"><a href="#使用Vue-Django搭建项目" class="headerlink" title="使用Vue+Django搭建项目"></a>使用<code>Vue+Django</code>搭建项目</h2><p><a href="https://zhuanlan.zhihu.com/p/25080236" target="_blank" rel="noopener">参考</a></p>
+<h3 id="构建Django项目"><a href="#构建Django项目" class="headerlink" title="构建Django项目"></a>构建<code>Django</code>项目</h3><p><em>命令：</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">django-admin startproject ulb_manager</span><br></pre></td></tr></table></figure>
+<p><em>结构：</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── manage.py</span><br><span class="line">└── ulb_manager</span><br><span class="line">    ├── __init__.py</span><br><span class="line">    ├── settings.py</span><br><span class="line">    ├── urls.py</span><br><span class="line">    └── wsgi.py</span><br></pre></td></tr></table></figure>
+<h2 id="进入项目根目录，创建一个-app-作为项目后端"><a href="#进入项目根目录，创建一个-app-作为项目后端" class="headerlink" title="进入项目根目录，创建一个 app 作为项目后端"></a>进入项目根目录，创建一个 <code>app</code> 作为项目后端</h2><p><em>命令：</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ulb_manager</span><br><span class="line">python manage.py startapp backend</span><br></pre></td></tr></table></figure>
+<p>即：<code>app</code> 名叫做 <code>backend</code></p>
+<p><em>结构：</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── backend</span><br><span class="line">│   ├── __init__.py</span><br><span class="line">│   ├── admin.py</span><br><span class="line">│   ├── migrations</span><br><span class="line">│   │   └── __init__.py</span><br><span class="line">│   ├── models.py</span><br><span class="line">│   ├── tests.py</span><br><span class="line">│   └── views.py</span><br><span class="line">├── manage.py</span><br><span class="line">└── ulb_manager</span><br><span class="line">    ├── __init__.py</span><br><span class="line">    ├── settings.py</span><br><span class="line">    ├── urls.py</span><br><span class="line">    └── wsgi.py</span><br></pre></td></tr></table></figure>
+<h3 id="将Vue打包的dist文件放入url-manager"><a href="#将Vue打包的dist文件放入url-manager" class="headerlink" title="将Vue打包的dist文件放入url_manager"></a>将<code>Vue</code>打包的<code>dist</code>文件放入<code>url_manager</code></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├─backend</span><br><span class="line">│  ├─migrations</span><br><span class="line">│  └─__pycache__</span><br><span class="line">├─vue-fonter</span><br><span class="line">│  └─dist</span><br><span class="line">│      └─static</span><br><span class="line">│          ├─css</span><br><span class="line">│          ├─fonts</span><br><span class="line">│          ├─img</span><br><span class="line">│          └─js</span><br><span class="line">└─ulb_manager</span><br><span class="line">    └─__pycache__</span><br></pre></td></tr></table></figure>
+<p><code>Vue-CLI3.x</code>在打包时不会生成<code>static</code>文件</p>
+<p>使用<code>vue ui</code>，导入<code>Vue</code>项目，在配置/基础配置/ 修改资源目录 为<code>static</code></p>
+<p>这样在进行打包就会生成<code>static</code>文件</p>
+<p><img src="https://wx1.sinaimg.cn/mw690/0083TyOJly1glz7x4dxvmj31bz0ovn01.jpg" alt></p>
+<h3 id="使用Django的通用视图-TemplateView"><a href="#使用Django的通用视图-TemplateView" class="headerlink" title="使用Django的通用视图 TemplateView"></a>使用<code>Django</code>的通用视图 <code>TemplateView</code></h3><p>找到项目根<code>urls.py(ulb_manager/urls.py)</code>，使用通用视图创建最简单的模板控制器，访问 <code>『/』</code>时直接返回<code>index.html</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">urlpatterns = [</span><br><span class="line">    path(&apos;admin/&apos;, admin.site.urls),</span><br><span class="line">    path(&apos;&apos;, TemplateView.as_view(template_name=&quot;index.html&quot;)),</span><br><span class="line">    path(&apos;api/&apos;, include(&apos;backend.urls&apos;))</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h3 id="配置Django项目的模板搜索路径"><a href="#配置Django项目的模板搜索路径" class="headerlink" title="配置Django项目的模板搜索路径"></a>配置<code>Django</code>项目的模板搜索路径</h3><p>上一步使用了<code>Django</code>的模板系统，所以需要配置一下模板使<code>Django</code>知道从哪里找到<code>index.html</code></p>
+<p>打开 <code>settings.py (ulb_manager/settings.py)</code>，找到<code>TEMPLATES</code>配置项，修改如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">TEMPLATES = [</span><br><span class="line">    &#123;</span><br><span class="line">        &apos;BACKEND&apos;: &apos;django.template.backends.django.DjangoTemplates&apos;,</span><br><span class="line">        # &apos;DIRS&apos;: [],</span><br><span class="line">        **&apos;DIRS&apos;: [&apos;vue-fonter/dist&apos;]**,</span><br><span class="line">        &apos;APP_DIRS&apos;: True,</span><br><span class="line">        &apos;OPTIONS&apos;: &#123;</span><br><span class="line">            &apos;context_processors&apos;: [</span><br><span class="line">                &apos;django.template.context_processors.debug&apos;,</span><br><span class="line">                &apos;django.template.context_processors.request&apos;,</span><br><span class="line">                &apos;django.contrib.auth.context_processors.auth&apos;,</span><br><span class="line">                &apos;django.contrib.messages.context_processors.messages&apos;,</span><br><span class="line">            ],</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>注意这里的<code>vue-fonter</code>是<code>VueJS</code>项目目录，<code>dist</code>则是运行 <code>npm run build</code>构建出的<code>index.html</code>与静态文件夹<code>static</code> 的父级目录</p>
+<p>这时启动<code>Django</code>项目，访问<code>/</code>则可以访问<code>index.html</code>，但是还有问题，静态文件都是404错误，下一步我们解决这个问题</p>
+<h3 id="配置静态文件搜索路径"><a href="#配置静态文件搜索路径" class="headerlink" title="配置静态文件搜索路径"></a>配置静态文件搜索路径</h3><p>打开 <code>settings.py (ulb_manager/settings.py</code>)，找到<code>STATICFILES_DIRS</code> 配置项，配置如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Add for vuejs</span><br><span class="line">STATICFILES_DIRS = [</span><br><span class="line">    os.path.join(BASE_DIR, &quot;vue-fonter/dist/static&quot;),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>这样<code>Django</code>不仅可以将<code>/</code> 映射到<code>index.html</code>，而且还可以顺利找到静态文件</p>
+<p>此时访问<code>/</code>我们可以看到使用<code>Django</code>作为后端的<code>VueJS</code>前端</p>]]></content>
+      <categories>
+        <category>配置</category>
+      </categories>
+      <tags>
+        <tag>小项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Django+Vue+Nginx+uWSGI部署</title>
     <url>//1ae14b31/</url>
     <content><![CDATA[<h2 id="Django-Vue-Nginx-uWSGI部署"><a href="#Django-Vue-Nginx-uWSGI部署" class="headerlink" title="Django+Vue+Nginx+uWSGI部署"></a><code>Django+Vue+Nginx+uWSGI</code>部署</h2><p><a href="https://blog.csdn.net/qq_41785581/article/details/102598073" target="_blank" rel="noopener">参考</a></p>
@@ -193,7 +229,10 @@
 <p>从源头删除nginx</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">rm -rf /usr/sbin/nginx</span><br><span class="line">rm -rf /etc/nginx</span><br><span class="line">rm -rf /etc/init.d/nginx</span><br></pre></td></tr></table></figure>
 <p>使用yum清理</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">yum remove nginx</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">yum remove nginx</span><br></pre></td></tr></table></figure>
+<h2 id="修改root-后面的名字"><a href="#修改root-后面的名字" class="headerlink" title="修改root@后面的名字"></a>修改<code>root@</code>后面的名字</h2><p><code>centos7</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hostnamectl <span class="keyword">set</span>-hostname dhl #</span><br><span class="line">hostname #查看</span><br><span class="line">vim /etc/hosts # 编辑hosts文件，给127.0.0.1添加hostname</span><br><span class="line"></span><br><span class="line">127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 dhl</span><br></pre></td></tr></table></figure>
+<p>重启shell生效</p>]]></content>
       <categories>
         <category>配置</category>
       </categories>
@@ -260,8 +299,8 @@
         <category>spider</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>小项目</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
