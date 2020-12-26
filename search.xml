@@ -107,9 +107,13 @@
 <p><code>/etc/nginx/sites-available/fonter.conf</code> 和 <code>/etc/nginx/sites-available/nginx_backend.conf</code>，都在 <code>/etc/nginx/sites-available</code>中，通过软连接<code>/etc/nginx/sites-enabled</code>在<code>/etc/nginx/nginx.conf</code>中的<code>include /etc/nginx/sites-enabled/*.conf;</code>导入<code>nginx.conf</code>文件,与主配置文件分离</p>]]></content>
       <categories>
         <category>配置</category>
+        <category>Django</category>
+        <category>nginx</category>
       </categories>
       <tags>
         <tag>服务器</tag>
+        <tag>Django</tag>
+        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
