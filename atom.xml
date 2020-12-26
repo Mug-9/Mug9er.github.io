@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-26T08:55:59.429Z</updated>
+  <updated>2020-12-26T15:55:10.535Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>axios与django通信</title>
+    <link href="http://orzff.cn//5218864/"/>
+    <id>http://orzff.cn//5218864/</id>
+    <published>2020-12-26T15:37:50.000Z</published>
+    <updated>2020-12-26T15:55:10.535Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx4.sinaimg.cn/mw690/0083TyOJly1gm1p4h5rt8j31hc0r4n68.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="小项目" scheme="http://orzff.cn/categories/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="django + vue" scheme="http://orzff.cn/categories/%E5%B0%8F%E9%A1%B9%E7%9B%AE/django-vue/"/>
+    
+    
+      <category term="django" scheme="http://orzff.cn/tags/django/"/>
+    
+      <category term="vue" scheme="http://orzff.cn/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Django + Vue 快速构建项目</title>
     <link href="http://orzff.cn//b2788495/"/>
     <id>http://orzff.cn//b2788495/</id>
     <published>2020-12-24T12:14:26.000Z</published>
-    <updated>2020-12-26T08:55:59.429Z</updated>
+    <updated>2020-12-26T15:42:00.580Z</updated>
     
     <summary type="html">
     
@@ -450,30 +476,6 @@
       <category term="多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/"/>
     
       <category term="杭电多校" scheme="http://orzff.cn/categories/ACM/%E5%A4%9A%E6%A0%A1/%E6%9D%AD%E7%94%B5%E5%A4%9A%E6%A0%A1/"/>
-    
-    
-      <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CodeForces EduRound 74</title>
-    <link href="http://orzff.cn//b223976b/"/>
-    <id>http://orzff.cn//b223976b/</id>
-    <published>2019-10-10T12:12:20.000Z</published>
-    <updated>2020-12-04T13:38:22.359Z</updated>
-    
-    <summary type="html">
-    
-      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/0083TyOJly1gblvj9ccz7j31hc0u0wg4.jpg&quot; alt=&quot;wallhaven-wyvrj6.png&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://orzff.cn/categories/ACM/"/>
-    
-      <category term="Codeforces" scheme="http://orzff.cn/categories/ACM/Codeforces/"/>
     
     
       <category term="题解" scheme="http://orzff.cn/tags/%E9%A2%98%E8%A7%A3/"/>
