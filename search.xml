@@ -306,8 +306,8 @@
         <category>spider</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>小项目</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -389,8 +389,8 @@
 <p>更新配置</p>
 <p>输入你用<code>$PROFILE</code>得到的路径</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">C:\Users\<span class="number">64371</span>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1</span><br></pre></td></tr></table></figure>
-<p>有些主题的样式可能会有些小空格，这时因为字体不支持<code>poweline</code>,推荐选择<code>CaskaydiaCove NF</code>字体，支持编程连字和<code>poweline</code>字形</p>
-<p><a href="https://github.com/ryanoasis/nerd-fonts/releases/tag/v2.1.0" target="_blank" rel="noopener">下载链接</a></p>
+<p>有些主题的样式可能会有些小空格，这时因为字体不支持<code>poweline</code>,推荐选择<code>AurulentSansMono</code>字体，支持编程连字和<code>poweline</code>字形</p>
+<p><a href="https://www.nerdfonts.com/font-downloads" target="_blank" rel="noopener">下载链接</a></p>
 <p>我的样式</p>
 <p><code>powershell 5</code></p>
 <p><img src="https://wx1.sinaimg.cn/mw690/0083TyOJly1glyrcnto2jj31hk0t4hdu.jpg" alt="poweshell5"></p>
