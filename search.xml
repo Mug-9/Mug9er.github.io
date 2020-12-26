@@ -31,6 +31,7 @@
 <p>此时访问<code>/</code>我们可以看到使用<code>Django</code>作为后端的<code>VueJS</code>前端</p>]]></content>
       <categories>
         <category>配置</category>
+        <category>Django + Vue</category>
       </categories>
       <tags>
         <tag>小项目</tag>
@@ -107,8 +108,7 @@
 <p><code>/etc/nginx/sites-available/fonter.conf</code> 和 <code>/etc/nginx/sites-available/nginx_backend.conf</code>，都在 <code>/etc/nginx/sites-available</code>中，通过软连接<code>/etc/nginx/sites-enabled</code>在<code>/etc/nginx/nginx.conf</code>中的<code>include /etc/nginx/sites-enabled/*.conf;</code>导入<code>nginx.conf</code>文件,与主配置文件分离</p>]]></content>
       <categories>
         <category>配置</category>
-        <category>Django</category>
-        <category>nginx</category>
+        <category>Django + nginx</category>
       </categories>
       <tags>
         <tag>服务器</tag>
@@ -246,6 +246,7 @@
 <p>重启shell生效</p>]]></content>
       <categories>
         <category>配置</category>
+        <category>服务器</category>
       </categories>
       <tags>
         <tag>服务器</tag>
@@ -310,8 +311,8 @@
         <category>spider</category>
       </categories>
       <tags>
-        <tag>python</tag>
         <tag>小项目</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -341,6 +342,7 @@
 <h2 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h2><p>这样就可以在<code>push</code>的时候同时更新了</p>]]></content>
       <categories>
         <category>配置</category>
+        <category>github + gitee</category>
       </categories>
       <tags>
         <tag>服务器</tag>
@@ -434,6 +436,7 @@
 <p><img src="https://wx4.sinaimg.cn/mw690/0083TyOJly1glyrcizjn6j31hk0t44qq.jpg" alt="腾讯云"></p>]]></content>
       <categories>
         <category>配置</category>
+        <category>terminal</category>
       </categories>
       <tags>
         <tag>terminal</tag>
@@ -551,6 +554,8 @@
 <h3 id="Eva-Theme"><a href="#Eva-Theme" class="headerlink" title="Eva Theme"></a>Eva Theme</h3><p>Eva 主题</p>
 <h2 id="我的配置文件"><a href="#我的配置文件" class="headerlink" title="我的配置文件"></a>我的配置文件</h2><figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"editor.fontFamily"</span>: <span class="string">"Cascadia Code"</span>,</span><br><span class="line">  <span class="attr">"editor.fontSize"</span>: <span class="number">20</span>,</span><br><span class="line">  <span class="attr">"editor.fontWeight"</span>: <span class="string">"300"</span>,</span><br><span class="line">  <span class="attr">"editor.fontLigatures"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"terminal.integrated.fontSize"</span>: <span class="number">20</span>,</span><br><span class="line">  <span class="attr">"terminal.integrated.fontWeight"</span>: <span class="string">"300"</span>,</span><br><span class="line">  <span class="attr">"terminal.integrated.cursorStyle"</span>: <span class="string">"underline"</span>,</span><br><span class="line">  <span class="attr">"debug.console.fontSize"</span>: <span class="number">18</span>,</span><br><span class="line">  <span class="attr">"workbench.iconTheme"</span>: <span class="string">"material-icon-theme"</span>,</span><br><span class="line">  <span class="attr">"explorer.confirmDelete"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"files.autoSave"</span>: <span class="string">"onFocusChange"</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 保存时自动格式化代码</span></span><br><span class="line">  <span class="attr">"editor.formatOnSave"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="comment">// eslint配置项，保存时自动修复错误</span></span><br><span class="line">  <span class="attr">"editor.codeActionsOnSave"</span>: &#123;</span><br><span class="line">    <span class="attr">"source.fixAll"</span>: <span class="literal">true</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 让vetur使用vs自带的js格式化工具，以便在函数前面加个空格</span></span><br><span class="line">  <span class="attr">"vetur.format.defaultFormatter.js"</span>: <span class="string">"vscode-typescript"</span>,</span><br><span class="line">  <span class="attr">"javascript.format.semicolons"</span>: <span class="string">"remove"</span>,</span><br><span class="line">  <span class="attr">"javascript.format.insertSpaceBeforeFunctionParenthesis"</span>: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 指定 *.vue 文件的格式化工具为vetur</span></span><br><span class="line">  <span class="attr">"[vue]"</span>: &#123;</span><br><span class="line">    <span class="attr">"editor.defaultFormatter"</span>: <span class="string">"octref.vetur"</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 指定 *.js 文件的格式化工具为vscode自带</span></span><br><span class="line">  <span class="attr">"[javascript]"</span>: &#123;</span><br><span class="line">    <span class="attr">"editor.defaultFormatter"</span>: <span class="string">"vscode.typescript-language-features"</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 默认使用prettier格式化支持的文件</span></span><br><span class="line">  <span class="attr">"editor.defaultFormatter"</span>: <span class="string">"esbenp.prettier-vscode"</span>,</span><br><span class="line"></span><br><span class="line">  <span class="attr">"better-comments.multilineComments"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"better-comments.highlightPlainText"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"cSpell.enableFiletypes"</span>: [<span class="string">"vue"</span>, <span class="string">"vue-html"</span>],</span><br><span class="line">  <span class="attr">"workbench.colorTheme"</span>: <span class="string">"Eva Dark Italic"</span>,</span><br><span class="line">  <span class="attr">"explorer.confirmDragAndDrop"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"editor.tabSize"</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">"backgroundCover.imagePath"</span>: <span class="string">"e:\\picture\\2020-12-11\\wallhaven-e7ozz8.png"</span>,</span><br><span class="line">  <span class="attr">"git.confirmSync"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"git.autofetch"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"backgroundCover.randomImageFolder"</span>: <span class="string">"e:\\picture\\2020-12-07"</span>,</span><br><span class="line">  <span class="attr">"backgroundCover.autoStatus"</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"backgroundCover.opacity"</span>: <span class="number">0.5</span>,</span><br><span class="line">  <span class="attr">"javascript.updateImportsOnFileMove.enabled"</span>: <span class="string">"always"</span>,</span><br><span class="line">  <span class="attr">"git.enableSmartCommit"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">"window.zoomLevel"</span>: <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
+        <category>配置</category>
+        <category>Vscode</category>
         <category>Vue</category>
       </categories>
       <tags>
