@@ -83,7 +83,7 @@
 
 <meta name="keywords" content="服务器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="远程服务器连接">
+<meta property="og:title" content="windows远程服务器mysql链接">
 <meta property="og:url" content="http://orzff.cn/c700630f/index.html">
 <meta property="og:site_name" content="Mug-9&#39;s blog">
 <meta property="og:locale" content="zh-Hans">
@@ -94,9 +94,9 @@
 <meta property="og:image" content="https://wx4.sinaimg.cn/mw690/0083TyOJly1gf4wgkwzwaj309n05vdfr.jpg">
 <meta property="og:image" content="https://wx3.sinaimg.cn/mw690/0083TyOJly1gf4wnimwtxj30l206paa5.jpg">
 <meta property="og:image" content="https://wx3.sinaimg.cn/mw690/0083TyOJly1gf4wpo7tfgj30in07d74g.jpg">
-<meta property="og:updated_time" content="2020-12-04T13:38:22.364Z">
+<meta property="og:updated_time" content="2020-12-27T08:02:02.564Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="远程服务器连接">
+<meta name="twitter:title" content="windows远程服务器mysql链接">
 <meta name="twitter:image" content="https://wx4.sinaimg.cn/mw690/0083TyOJly1gf4t674wa9j30fv059dfs.jpg">
 
 
@@ -133,7 +133,7 @@
 
 
 
-  <title>远程服务器连接 | Mug-9's blog</title>
+  <title>windows远程服务器mysql链接 | Mug-9's blog</title>
   
 
 
@@ -329,7 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">远程服务器连接</h1>
+          <h1 class="post-title" itemprop="name headline">windows远程服务器mysql链接</h1>
         
 
         <div class="post-meta">
@@ -357,8 +357,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-12-04T21:38:22+08:00">
-                2020-12-04
+              <time title="更新于" itemprop="dateModified" datetime="2020-12-27T16:02:02+08:00">
+                2020-12-27
               </time>
             
           </span>
@@ -376,8 +376,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/小项目/" itemprop="url" rel="index">
-                    <span itemprop="name">小项目</span>
+                  <a href="/categories/配置/" itemprop="url" rel="index">
+                    <span itemprop="name">配置</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/配置/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
                   </a>
                 </span>
 
@@ -420,24 +431,48 @@
       
         <h2 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h2><p>因为项目需要一个数据库，所以就在阿里云哪里用云翼计划买了一个小型服务器，虽然小但是也够用</p>
 <p><img src="https://wx4.sinaimg.cn/mw690/0083TyOJly1gf4t674wa9j30fv059dfs.jpg" alt="img1"></p>
-<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><p>使用ubuntu下的命令就可以自动安装mysql数据库</p>
+<h2 id="centos-安装mysql"><a href="#centos-安装mysql" class="headerlink" title="centos 安装mysql"></a><code>centos</code> 安装<code>mysql</code></h2><h3 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装<code>mysql</code></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -i -c http:<span class="comment">//dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm</span></span><br><span class="line">yum -y install mysql57-community-release-el7<span class="number">-10.n</span>oarch.rpm</span><br><span class="line">yum -y install mysql-community-server</span><br></pre></td></tr></table></figure>
+<h3 id="设置数据库"><a href="#设置数据库" class="headerlink" title="设置数据库"></a>设置数据库</h3><h4 id="启动mysql"><a href="#启动mysql" class="headerlink" title="启动mysql"></a>启动<code>mysql</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start  mysqld.service</span><br></pre></td></tr></table></figure>
+<h4 id="查看运行状态"><a href="#查看运行状态" class="headerlink" title="查看运行状态"></a>查看运行状态</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status mysqld.service</span><br></pre></td></tr></table></figure>
+<h4 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h4><p>先查看原始密码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">"password"</span> /<span class="keyword">var</span>/log/mysqld.log</span><br></pre></td></tr></table></figure>
+<p>利用原始密码进入数据库</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+<p>修改密码规则</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; <span class="keyword">set</span> global validate_password_policy=0;</span><br><span class="line">mysql&gt; <span class="keyword">set</span> global validate_password_length=1;</span><br></pre></td></tr></table></figure>
+<p>修改密码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'new password'</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="windows-mysql安装"><a href="#windows-mysql安装" class="headerlink" title="windows mysql安装"></a><code>windows mysql</code>安装</h2><h3 id="下载-amp-解压"><a href="#下载-amp-解压" class="headerlink" title="下载 &amp; 解压"></a>下载 &amp; 解压</h3><p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">链接</a></p>
+<h3 id="配置系统变量"><a href="#配置系统变量" class="headerlink" title="配置系统变量"></a>配置系统变量</h3><p>找到<code>bin</code>目录的位置：<code>E:\Config\mysql\mysql-5.7.32-winx64\bin</code></p>
+<p>在环境变量的<code>path</code>中加入路径</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="生成data文件"><a href="#生成data文件" class="headerlink" title="生成data文件"></a>生成<code>data</code>文件</h4><p>以管理员身份运行<code>cmd</code></p>
+<p>进入<code>E:\Config\mysql\mysql-5.7.32-winx64\bin</code>中</p>
+<p>执行命令：<code>mysqld --initialize-insecure --user=mysql</code> 在<code>E:\Config\mysql\mysql-5.7.32-winx64\</code>下和<code>bin</code>同级目录生成<code>data</code>目录</p>
+<h4 id="安装mysql-1"><a href="#安装mysql-1" class="headerlink" title="安装mysql"></a>安装<code>mysql</code></h4><p>继续执行</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld -install</span><br></pre></td></tr></table></figure>
+<h4 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net start MySQL</span><br></pre></td></tr></table></figure>
+<h4 id="登录mysql"><a href="#登录mysql" class="headerlink" title="登录mysql"></a>登录<code>mysql</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
+<p>初始数据库没密码，直接回车</p>
+<h4 id="修改密码-1"><a href="#修改密码-1" class="headerlink" title="修改密码"></a>修改密码</h4><p>执行</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER <span class="string">'root'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'new password'</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><p>使用<code>ubuntu</code>下的命令就可以自动安装<code>mysql</code>数据库</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install mysql-server</span><br><span class="line">apt-get isntall mysql-client</span><br><span class="line">sudo apt-get install libmysqlclient-dev</span><br></pre></td></tr></table></figure>
 <p>安装成功后输入下面指令</p>
 <p><strong><code>sudo netstat -tap | grep mysq</code></strong></p>
 <p>如果是下图这样</p>
 <p><img src="https://wx4.sinaimg.cn/mw690/0083TyOJly1gf4tfwa2pcj30nf014dfp.jpg" alt="img2"></p>
-<p>那么就成功安装了，下面就是通过<strong><code>mysql -u root -p</code></strong>就可以登录mysql数据库</p>
+<p>那么就成功安装了，下面就是通过<strong><code>mysql -u root -p</code></strong>就可以登录<code>mysql</code>数据库</p>
 <p><img src="https://wx3.sinaimg.cn/mw690/0083TyOJly1gf4tk9c4g8j30ji074aaa.jpg" alt="img3"></p>
-<p><strong>注意，在第一次登录mysql时输入的密码即为你的初始密码，不输就是空</strong></p>
-<h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><p>在ubuntu下，修改<strong><code>/etc/mysql/mysql.conf.d/mysqld.cnf</code></strong>文件，将</p>
+<p><strong>注意，在第一次登录<code>mysql</code>时输入的密码即为你的初始密码，不输就是空</strong></p>
+<h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><p>在<code>ubuntu</code>下，修改<strong><code>/etc/mysql/mysql.conf.d/mysqld.cnf</code></strong>文件，将</p>
 <p><strong><code>bind-address = 127.9.0.1</code></strong>语句注释掉或者改成<strong><code>bind-address=0.0.0.0</code></strong></p>
 <p><img src="https://wx2.sinaimg.cn/mw690/0083TyOJly1gf4tqpv8czj30gv09rweo.jpg" alt="img4"></p>
-<p><strong><code>bind-address = 127.9.0.1</code></strong> 意味着只允许本地登录，而把他改成<strong><code>0.0.0.0</code></strong>就代表允许所有的ip登录</p>
-<p>但是这还不够，当我们连接远程数据库时，会新建一个root 用户，但是这个root只允许本地登录，不允许远程登陆，我们可以通过</p>
+<p><strong><code>bind-address = 127.9.0.1</code></strong> 意味着只允许本地登录，而把他改成<strong><code>0.0.0.0</code></strong>就代表允许所有的<code>ip</code>登录</p>
+<p>但是这还不够，当我们连接远程数据库时，会新建一个<code>root</code> 用户，但是这个<code>root</code>只允许本地登录，不允许远程登陆，我们可以通过</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql</span><br><span class="line"><span class="keyword">select</span> host, <span class="keyword">user</span> <span class="keyword">from</span> <span class="keyword">user</span>;</span><br></pre></td></tr></table></figure>
 <p>来验证发现这个<strong><code>root</code></strong>的 <strong><code>host</code></strong>只有一个<strong><code>localhost</code></strong></p>
 <p>这是我们要通过设置来使他允许远程用户登录</p>
-<p>在mysql 中输入</p>
+<p>在<code>mysql</code> 中输入</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 允许所有root用户登录</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'root'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'root用户密码'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;</span><br><span class="line"><span class="comment"># 允许指定ip的root用户登录</span></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> root@<span class="string">'指定的IP地址'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'root用户密码'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;</span><br></pre></td></tr></table></figure>
 <p>然后重载授权表</p>
 <p><code>FLUSH PRIVILEGES;</code></p>
@@ -447,7 +482,8 @@
 <p><strong>但是</strong> ,如果这时还是连接不上，就可能是防火墙的问题，输入<code>ufw disable</code>把防火墙关闭</p>
 <p><strong>如果</strong>还不行的话，就有可能是阿里云的问题了，因为我用的是一个轻量级的服务器，所以在防火墙中把端口3306打开即可</p>
 <p><img src="https://wx3.sinaimg.cn/mw690/0083TyOJly1gf4wnimwtxj30l206paa5.jpg" alt="img6"></p>
-<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>经过以上步骤mysql的远程连接基本上就可以搞定了</p>
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>经过以上步骤<code>mysql</code>的远程连接基本上就可以搞定了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h IP -u root -p</span><br></pre></td></tr></table></figure>
 <p><img src="https://wx3.sinaimg.cn/mw690/0083TyOJly1gf4wpo7tfgj30in07d74g.jpg" alt="img7"></p>
       
     </div>
@@ -481,7 +517,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://orzff.cn/c700630f/" title="远程服务器连接">http://orzff.cn/c700630f/</a>
+    <a href="http://orzff.cn/c700630f/" title="windows远程服务器mysql链接">http://orzff.cn/c700630f/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -611,7 +647,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -702,7 +738,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#云服务器"><span class="nav-number">1.</span> <span class="nav-text">云服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据库"><span class="nav-number">2.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程连接"><span class="nav-number">3.</span> <span class="nav-text">远程连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束"><span class="nav-number">4.</span> <span class="nav-text">结束</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#云服务器"><span class="nav-number">1.</span> <span class="nav-text">云服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#centos-安装mysql"><span class="nav-number">2.</span> <span class="nav-text">centos 安装mysql</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装mysql"><span class="nav-number">2.1.</span> <span class="nav-text">安装mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置数据库"><span class="nav-number">2.2.</span> <span class="nav-text">设置数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#启动mysql"><span class="nav-number">2.2.1.</span> <span class="nav-text">启动mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看运行状态"><span class="nav-number">2.2.2.</span> <span class="nav-text">查看运行状态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改密码"><span class="nav-number">2.2.3.</span> <span class="nav-text">修改密码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#windows-mysql安装"><span class="nav-number">3.</span> <span class="nav-text">windows mysql安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载-amp-解压"><span class="nav-number">3.1.</span> <span class="nav-text">下载 &amp; 解压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置系统变量"><span class="nav-number">3.2.</span> <span class="nav-text">配置系统变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.3.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成data文件"><span class="nav-number">3.3.1.</span> <span class="nav-text">生成data文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装mysql-1"><span class="nav-number">3.3.2.</span> <span class="nav-text">安装mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动服务"><span class="nav-number">3.3.3.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#登录mysql"><span class="nav-number">3.3.4.</span> <span class="nav-text">登录mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改密码-1"><span class="nav-number">3.3.5.</span> <span class="nav-text">修改密码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据库"><span class="nav-number">4.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程连接"><span class="nav-number">5.</span> <span class="nav-text">远程连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束"><span class="nav-number">6.</span> <span class="nav-text">结束</span></a></li></ol></div>
             
 
           </div>
