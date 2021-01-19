@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Mug-9&#39;s blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://wx1.sinaimg.cn/mw690/0083TyOJly1glz7x4dxvmj31bz0ovn01.jpg">
-<meta property="og:updated_time" content="2020-12-26T15:42:00.580Z">
+<meta property="og:updated_time" content="2021-01-03T02:27:32.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django + Vue 快速构建项目">
 <meta name="twitter:image" content="https://wx1.sinaimg.cn/mw690/0083TyOJly1glz7x4dxvmj31bz0ovn01.jpg">
@@ -351,8 +351,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-12-26T23:42:00+08:00">
-                2020-12-26
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T10:27:32+08:00">
+                2021-01-03
               </time>
             
           </span>
@@ -456,7 +456,7 @@
 <h3 id="解决开发时的跨域问题"><a href="#解决开发时的跨域问题" class="headerlink" title="解决开发时的跨域问题"></a>解决开发时的跨域问题</h3><p>使用<code>corsheaders</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install corsheaders</span><br></pre></td></tr></table></figure>
 <p>在<code>setting.py</code>中加入</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">INSTALLED_APPS = [</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="string">'corsheaders'</span>,</span><br><span class="line">]</span><br><span class="line">MIDDLEWARE = [</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    'corsheaders.middleware.CorsMiddleware',  # 添加cors，在第三行，位置不能改</span><br><span class="line">    <span class="string">'django.middleware.common.CommonMiddleware'</span>,</span><br><span class="line">]</span><br><span class="line">CORS_ORIGIN_ALLOW_ALL = True</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">INSTALLED_APPS = [</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="string">'corsheaders'</span>,</span><br><span class="line">]</span><br><span class="line">MIDDLEWARE = [</span><br><span class="line">    <span class="comment">//......</span></span><br><span class="line">    'corsheaders.middleware.CorsMiddleware',  # 添加cors，在第三行，位置不能改</span><br><span class="line">    <span class="string">'django.middleware.common.CommonMiddleware'</span>,</span><br><span class="line">]</span><br><span class="line">CORS_ORIGIN_ALLOW_ALL = True</span><br><span class="line"># 允许请求携带cookies</span><br><span class="line">CORS_ALLOW_CREDENTIALS= True</span><br></pre></td></tr></table></figure>
 <p>以上是从网上找的解决方法，但是并没有解决问题，</p>
 <p>先看一下同源的定义</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">同源是指&quot;协议+域名+端口&quot;三者相同，即便两个不同的域名指向同一个ip地址，也非同源。</span><br></pre></td></tr></table></figure>
@@ -744,7 +744,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
