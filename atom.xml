@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://orzff.cn/"/>
-  <updated>2020-12-27T09:40:28.562Z</updated>
+  <updated>2021-03-03T15:52:14.473Z</updated>
   <id>http://orzff.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vultr+cloudflare</title>
+    <link href="http://orzff.cn//4e01c297/"/>
+    <id>http://orzff.cn//4e01c297/</id>
+    <published>2021-03-03T15:42:11.000Z</published>
+    <updated>2021-03-03T15:52:14.473Z</updated>
+    
+    <summary type="html">
+    
+      &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://wx3.sinaimg.cn/mw690/0083TyOJly1go75jv9es8j31hc0u04qq.jpg&quot; alt=&quot;封面&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="配置" scheme="http://orzff.cn/categories/%E9%85%8D%E7%BD%AE/"/>
+    
+      <category term="服务器" scheme="http://orzff.cn/categories/%E9%85%8D%E7%BD%AE/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="科学上网" scheme="http://orzff.cn/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Django与mysql相连</title>
@@ -243,7 +267,7 @@
     <link href="http://orzff.cn//e96d644/"/>
     <id>http://orzff.cn//e96d644/</id>
     <published>2020-12-04T15:29:20.000Z</published>
-    <updated>2021-01-19T04:44:30.541Z</updated>
+    <updated>2021-03-03T15:52:19.828Z</updated>
     
     <summary type="html">
     
@@ -458,26 +482,6 @@
       <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
     
       <category term="python 报错处理" scheme="http://orzff.cn/categories/spider/python-%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/"/>
-    
-    
-      <category term="python" scheme="http://orzff.cn/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python 爬取免费代理</title>
-    <link href="http://orzff.cn//28d5d8e8/"/>
-    <id>http://orzff.cn//28d5d8e8/</id>
-    <published>2020-02-06T02:37:03.000Z</published>
-    <updated>2020-12-07T06:47:27.906Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/0083TyOJly1gbmhdj616xj31c00u0diq.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="spider" scheme="http://orzff.cn/categories/spider/"/>
     
     
       <category term="python" scheme="http://orzff.cn/tags/python/"/>
